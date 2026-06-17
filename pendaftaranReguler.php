@@ -22,7 +22,8 @@ class PendaftaranReguler extends Pendaftaran {
         return $result;
     }
 
-    // Implementasi abstract method: total biaya = biaya dasar (tanpa tambahan)
+    // Tahap 5: Polymorphism - overriding hitungTotalBiaya()
+    // Total Biaya = biayaPendaftaranDasar (tarif standar, tanpa biaya tambahan)
     public function hitungTotalBiaya() {
         return $this->biayaPendaftaranDasar;
     }
@@ -35,4 +36,5 @@ class PendaftaranReguler extends Pendaftaran {
             'lokasi_kampus' => $this->lokasiKampus ?? '-',
         ];
     }
+    
 }

@@ -22,6 +22,7 @@ class PendaftaranPrestasi extends Pendaftaran {
         return $result;
     }
 
+    // Tahap 5: Polymorphism - overriding hitungTotalBiaya()
     // Implementasi abstract method: total biaya = biaya dasar - 50000 (potongan prestasi)
     public function hitungTotalBiaya() {
         return $this->biayaPendaftaranDasar - 50000;

@@ -22,6 +22,7 @@ class PendaftaranKedinasan extends Pendaftaran {
         return $result;
     }
 
+    // Tahap 5: Polymorphism - overriding hitungTotalBiaya()
     // Implementasi abstract method: total biaya = biaya dasar * 1.25 (surcharge 25%)
     public function hitungTotalBiaya() {
         return $this->biayaPendaftaranDasar * 1.25;
