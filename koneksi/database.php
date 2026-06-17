@@ -1,13 +1,13 @@
 <?php
 
 class Database {
-    protected $conn;
+    public $conn;
 
     public function __construct() {
         $host     = 'localhost';
         $user     = 'root';
         $password = '';
-        $dbname   = 'DB_SIMULASI_PBO_KELAS_NamaLengkap';
+        $dbname   = 'db_simulasi_pbo_ti1c_salsabilahazahrah';
 
         $this->conn = new mysqli($host, $user, $password, $dbname);
 
